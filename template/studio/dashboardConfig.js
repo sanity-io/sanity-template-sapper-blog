@@ -1,7 +1,10 @@
 export default {
   widgets: [
     {
-      name: 'sanity-tutorials'
+      name: 'sanity-tutorials',
+      options: {
+        templateRepoId: 'sanity-io/sanity-template-gatsby-blog'
+      }
     },
     {name: 'structure-menu'},
     {
@@ -19,6 +22,12 @@ export default {
                   title: 'Sanity Studio',
                   name: '<#<deployments.studio.providerInfo.siteName>#>',
                   apiId: '<#<deployments.studio.providerInfo.siteId>#>'
+                },
+                {
+                  buildHookId: '<#<deployments.web.providerInfo.buildHookId>#>',
+                  title: 'Blog Website',
+                  name: '<#<deployments.web.providerInfo.siteName>#>',
+                  apiId: '<#<deployments.web.providerInfo.siteId>#>'
                 }
               ]
             }
@@ -29,14 +38,15 @@ export default {
             title: 'GitHub repo',
             value: 'https://github.com/<#<repository.owner>#>/<#<repository.name>#>',
             category: 'Code'
-          }
+          },
+          {title: 'Frontend', value: '<#<deployments.web.url>#>', category: 'apps'}
         ]
       }
     },
     {name: 'project-users', layout: {height: 'auto'}},
     {
       name: 'document-list',
-      options: {title: 'Recently edited', order: '_updatedAt desc', limit: 10, types: []},
+      options: {title: 'Recent blog posts', order: '_createdAt desc', types: ['post']},
       layout: {width: 'medium'}
     }
   ]
