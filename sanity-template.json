@@ -4,7 +4,7 @@
   "description": "Fully customizable blog template with a Svelte.js front-end.",
   "previewMedia": {
     "type": "image",
-    "src": "assets/studio.jpg",
+    "src": "assets/web.jpg",
     "alt": "A preview image of Sanity Studio."
   },
   "technologies": [
@@ -50,7 +50,7 @@
       },
       "previewMedia": {
         "type": "image",
-        "src": "assets/frontend.jpg",
+        "src": "assets/web.jpg",
         "alt": "A preview image of the landing pages website."
       },
       "requiredCorsOrigins": [
