@@ -3,7 +3,7 @@
 	export function preload({ params, query }) {
     return client.fetch('*[_type == "post"]').then(posts => {
 			return { posts };
-		});
+		}).catch(err => this.error(500, err));
 	}
 </script>
 
