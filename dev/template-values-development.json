@@ -1,0 +1,28 @@
+{
+  "repository": {
+    "name": "dev-sanity-clean",
+    "owner": "sanity-io",
+    "private": false
+  },
+  "sanity": {
+    "dataset": "clean",
+    "projectId": "jmhf2rn8",
+    "projectTitle": "Clean"
+  },
+  "user": {
+    "displayName": "Marius Lundgård",
+    "profileImage": "https://lh3.googleusercontent.com/-a67P3TV8b5g/AAAAAAAAAAI/AAAAAAAAADI/LGBX1ZAjh88/photo.jpg",
+    "email": "marius@sanity.io"
+  },
+  "userInput": {},
+  "deployments": {
+    "studio": {
+      "url": "https://sanity-clean-studio-rf4qpk9y.netlify.com/",
+      "providerName": "netlify",
+      "providerInfo": {
+        "buildHookId": "5cc04d5199df1802277a6e91",
+        "siteId": "b3b7bb87-000f-42a3-9ed3-83358be97dde"
+      }
+    }
+  }
+}

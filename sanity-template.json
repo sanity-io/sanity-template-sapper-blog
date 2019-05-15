@@ -1,0 +1,39 @@
+{
+  "version": 0,
+  "title": "Clean",
+  "description": "Template starter with a clean studio.",
+  "previewMedia": {
+    "type": "image",
+    "src": "assets/studio.jpg",
+    "alt": "A preview image of Sanity Studio."
+  },
+  "technologies": [
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "url": "https://www.netlify.com/"
+    }
+  ],
+  "deployments": [
+    {
+      "id": "studio",
+      "type": "studio",
+      "title": "Sanity Studio",
+      "description": "The Sanity Studio is where you edit and structure your content.",
+      "provider": {
+        "name": "netlify",
+        "config": {
+          "base": "studio",
+          "cmd": "npm run build && cp ./netlify.toml dist",
+          "dir": "studio/dist"
+        },
+        "requirements": ["build-hook"]
+      },
+      "previewMedia": {
+        "type": "image",
+        "src": "assets/studio.jpg",
+        "alt": "A preview image of the Sanity Studio."
+      }
+    }
+  ]
+}
