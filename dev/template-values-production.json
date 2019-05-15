@@ -1,13 +1,13 @@
 {
   "repository": {
-    "name": "dev-sanity-clean",
+    "name": "dev-sanity-sapper-blog",
     "owner": "sanity-io",
     "private": false
   },
   "sanity": {
-    "dataset": "clean",
+    "dataset": "blog",
     "projectId": "jmhf2rn8",
-    "projectTitle": "Clean"
+    "projectTitle": "Sapper"
   },
   "user": {
     "displayName": "Marius Lundgård",
@@ -17,7 +17,7 @@
   "userInput": {},
   "deployments": {
     "studio": {
-      "url": "https://sanity-clean-studio-rf4qpk9y.netlify.com/",
+      "url": "https://sanity-sapper-blog-studio-rf4qpk9y.netlify.com/",
       "providerName": "netlify",
       "providerInfo": {
         "buildHookId": "5cc04d5199df1802277a6e91",

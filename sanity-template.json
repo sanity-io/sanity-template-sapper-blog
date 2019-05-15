@@ -1,7 +1,7 @@
 {
   "version": 0,
-  "title": "Clean",
-  "description": "Template starter with a clean studio.",
+  "title": "Blog with Sapper",
+  "description": "Fully customizable blog template with a Svelte.js front-end.",
   "previewMedia": {
     "type": "image",
     "src": "assets/studio.jpg",
@@ -34,6 +34,31 @@
         "src": "assets/studio.jpg",
         "alt": "A preview image of the Sanity Studio."
       }
+    },
+    {
+      "id": "web",
+      "type": "web",
+      "title": "Frontend",
+      "description": "The Sapper blog started adapted for Sanity.io.",
+      "provider": {
+        "name": "netlify",
+        "config": {
+          "cmd": "npm run build-web",
+          "dir": "web/out"
+        },
+        "requirements": ["build-hook"]
+      },
+      "previewMedia": {
+        "type": "image",
+        "src": "assets/frontend.jpg",
+        "alt": "A preview image of the landing pages website."
+      },
+      "requiredCorsOrigins": [
+        {
+          "origin": "http://localhost:3000",
+          "allowCredentials": false
+        }
+      ]
     }
   ]
 }
