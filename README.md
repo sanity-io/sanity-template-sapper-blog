@@ -12,7 +12,7 @@ The template contains a [Sapper](https://sapper.svelte.dev) blog frontend and Sa
 
 Want to make a template for Sanity and your favourite front-end framework? We’re still maturing [sanity.io/create](https://sanity.io/create) and our APIs, but do tell us about it on [slack.sanity.io](https://slack.sanity.io).
 
-![The clean template](https://github.com/sanity-io/sanity-template-clean/blob/master/assets/web.jpg?raw=true)
+![The clean template](https://github.com/sanity-io/sanity-template-saper-blog/blob/master/assets/web.jpg?raw=true)
 
 ## Local development
 
