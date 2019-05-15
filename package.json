@@ -1,12 +1,12 @@
 {
   "private": true,
-  "name": "sanity-template-clean",
+  "name": "sanity-template-sapper-blog",
   "scripts": {
     "build": "sanity-template build --template-values dev/template-values-production.json",
     "copy-node-modules": "npm run copy-studio-node-modules",
     "copy-studio-node-modules": "cp -R build/studio/node_modules template/studio/node_modules",
     "dev": "sanity-template watch --template-values dev/template-values-development.json",
-    "export": "cd build/studio && sanity dataset export clean ../../data/production.tar.gz"
+    "export": "cd build/studio && sanity dataset export blog ../../data/production.tar.gz"
   },
   "devDependencies": {
     "sanity-template-tools": "^1.0.0-alpha.1"
