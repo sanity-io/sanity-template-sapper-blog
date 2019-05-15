@@ -22,7 +22,7 @@
 
     const query = filter + projection
     const post = await client.fetch(query, { slug }).catch(err => this.error(500, err))
-		return { post: {
+    return { post: {
       ...post,
       body: blocksToHtml({blocks: post.body, serializers, ...client.clientConfig })
     } };

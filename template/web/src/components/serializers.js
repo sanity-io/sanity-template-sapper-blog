@@ -10,10 +10,15 @@ const { h } = blocksToHtml
 
 export default {
   types: {
-    mainImage: ({node}) =>
+    mainImage: ({ node }) =>
       h('img', {
-        src: urlFor(node).width(600).auto('format').url()
+        src: urlFor(node)
+          .width(600)
+          .auto('format')
+          .url()
       }),
-    authorReference: ({node}) => h('b', {}, node.author.name)
+    authorReference: ({ node }) => h('b', {}, node.author.name),
+    code: ({ node }) =>
+      h('pre', { 'data-language': node.language }, h('code', {}, node.code))
   }
 }
