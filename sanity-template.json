@@ -45,7 +45,7 @@
         "name": "netlify",
         "config": {
           "cmd": "npm run build-web",
-          "dir": "__sapper__/export"
+          "dir": "web/__sapper__/export"
         },
         "requirements": ["build-hook"]
       },
