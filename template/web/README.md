@@ -1,6 +1,6 @@
 # sapper-template-sanity-mod
 
-This is a proof of concept for integrating the [Blog content from sanity.io/create](https://www.sanity.io/create?template=sanity-io%2Fsanity-template-gatsby-blog) with Sapper.
+This is a blog that use [content from sanity.io/create](https://www.sanity.io/create?template=sanity-io%2Fsanity-template-gatsby-blog) with Sapper, a app framework for Svelte.js.
 
 Currently we're using [block-content-to-html](https://github.com/sanity-io/block-content-to-html) in order to generate Portable Text to HTML. In the future we should be able to render rich text with custom types with native svelte components.
 

@@ -1,11 +1,12 @@
 # <#< sanity.projectTitle >#>
 
-_A template starter with a clean Studio._
+_Fully customizable blog template with a Svelte.js front-end._
 
-Deployed from [sanity.io/create](https://www.sanity.io/create/?template=sanity-io%2Fsanity-template-clean).
+Deployed from [sanity.io/create](https://www.sanity.io/create?template=sanity-io/sanity-template-sapper-blog)
 
 ## What you have
 
+- A Military-grade progressive blog with [Sapper](https://sapper.svelte.dev/)
 - Structured content using [Sanity.io](https://www.sanity.io)
 - Global deployment on [Netlify](https://netlify.com)
 
@@ -15,6 +16,7 @@ Deployed from [sanity.io/create](https://www.sanity.io/create/?template=sanity-i
 2. `npm install` in the project root folder on local
 3. `npm run dev` to start the studio and frontend locally
    - Your studio should be running on [http://localhost:3333](http://localhost:3333)
+   - Your frontend should be running on [http://localhost:3000](http://localhost:3000)
 4. `npm run build` to build to production locally
 
 ## Deploy changes

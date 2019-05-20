@@ -1,9 +1,5 @@
 # sanity-template-sapper-blog
 
-**_WORK IN PROGRESS_: Things that doesn't work (yet)**:
-- The Netlify build will fail because of this [bug](https://github.com/sveltejs/sapper/issues/689)
-
----
 _Fully customizable blog template with a [Svelte](https://svelte.dev) front-end._
 
 This template repo is used by Sanity.io to easily create deployed and configured projects through a web interface. You can test it out by [creating this project](https://www.sanity.io/create/?template=sanity-io%2Fsanity-template-sapper-blog).
