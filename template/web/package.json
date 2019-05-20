@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build",
+    "build": "sapper export",
     "export": "sapper export",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
