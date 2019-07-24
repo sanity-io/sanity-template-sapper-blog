@@ -41,6 +41,7 @@
       "type": "web",
       "title": "Frontend",
       "description": "The Sapper blog started adapted for Sanity.io.",
+      "dir": "./web",
       "provider": {
         "name": "netlify",
         "config": {
