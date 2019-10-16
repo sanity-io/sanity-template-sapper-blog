@@ -26,7 +26,7 @@
         "config": {
           "base": "/",
           "dir": "/studio/dist",
-          "cmd": "npm run build && cp ./netlify.toml dist"
+          "cmd": "npm run build && cp studio/netlify.toml studio/dist"
         },
         "requirements": ["build-hook"]
       },
