@@ -24,8 +24,8 @@
       "provider": {
         "name": "netlify",
         "config": {
-          "base": "studio",
-          "dir": "dist",
+          "base": "/",
+          "dir": "/studio/dist",
           "cmd": "npm run build && cp ./netlify.toml dist"
         },
         "requirements": ["build-hook"]
@@ -45,8 +45,8 @@
       "provider": {
         "name": "netlify",
         "config": {
-          "base": "web",
-          "dir": "__sapper__/export",
+          "base": "/",
+          "dir": "/web/__sapper__/export",
           "cmd": "npm run build"
         },
         "requirements": ["build-hook"]
