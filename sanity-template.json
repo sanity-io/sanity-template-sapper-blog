@@ -47,7 +47,7 @@
         "config": {
           "base": "web",
           "dir": "__sapper__/export",
-          "cmd": "npm run build-web"
+          "cmd": "npm run build"
         },
         "requirements": ["build-hook"]
       },
