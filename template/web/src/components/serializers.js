@@ -1,24 +1,50 @@
 // https://www.sanity.io/docs/what-you-need-to-know-about-block-text/presenting-block-text
-import blocksToHtml from '@sanity/block-content-to-html'
+// https://github.com/movingbrands/svelte-portable-text
+import BlockContent from '@movingbrands/svelte-portable-text';
 // https://www.npmjs.com/package/@sanity/image-url
-import urlBuilder from '@sanity/image-url'
-import client from '../sanityClient'
+import urlBuilder from '@sanity/image-url';
+import client from '../sanityClient';
+import Image from './Image.svelte';
+import Code from './Code.svelte';
+import Author from './Author.svelte';
+import Link from './Link.svelte';
 
-const urlFor = source => urlBuilder(client).image(source)
-
-const { h } = blocksToHtml
+const urlFor = source => urlBuilder(client).image(source);
 
 export default {
+  marks: {
+    link: ({ children, mark }) => ({
+      component: Link,
+      childNodes: children,
+      props: mark,
+    }),
+  },
   types: {
-    mainImage: ({ node }) =>
-      h('img', {
-        src: urlFor(node)
-          .width(600)
+    mainImage: ({ node, children }) => ({
+      component: Image,
+      childNodes: children,
+      props: {
+        url: urlFor(node)
+          .width(800)
           .auto('format')
-          .url()
-      }),
-    authorReference: ({ node }) => h('b', {}, node.author.name),
-    code: ({ node }) =>
-      h('pre', { 'data-language': node.language }, h('code', {}, node.code))
-  }
-}
+          .url(),
+        alt: node.alt,
+      },
+    }),
+    code: ({ node: { code, language } }) => ({
+      component: Code,
+      childNodes: [],
+      props: {
+        code,
+        language,
+      },
+    }),
+    authorReference: ({ children, node: { author } }) => ({
+      component: Author,
+      childNodes: children,
+      props: {
+        author,
+      },
+    }),
+  },
+};
