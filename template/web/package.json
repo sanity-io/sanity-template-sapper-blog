@@ -2,7 +2,7 @@
   "private": true,
   "name": "sanity-sapper-blog-web",
   "description": "Sapper frontend",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper export",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@sanity/client": "^0.147.3",
-    "@sanity/image-url": "^0.140.15",
+    "@sanity/image-url": "^0.140.16",
     "compression": "^1.7.4",
     "groq": "^0.147.0",
     "polka": "^0.5.2",
