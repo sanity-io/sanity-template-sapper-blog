@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "sanity-sapper-blog-studio",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "main": "package.json",
   "author": "Sanity <hello@sanity.io>",
   "scripts": {
@@ -13,15 +13,15 @@
     "test": "sanity check"
   },
   "dependencies": {
-    "@sanity/base": "^1.149.1",
-    "@sanity/cli": "^1.149.1",
-    "@sanity/components": "^1.149.1",
+    "@sanity/base": "^1.149.2",
+    "@sanity/cli": "^1.149.2",
+    "@sanity/components": "^1.149.2",
     "@sanity/code-input": "^1.149.0",
-    "@sanity/core": "^1.149.1",
-    "@sanity/dashboard": "^1.149.1",
-    "@sanity/default-layout": "^1.149.1",
+    "@sanity/core": "^1.149.2",
+    "@sanity/dashboard": "^1.149.2",
+    "@sanity/default-layout": "^1.149.2",
     "@sanity/default-login": "^1.149.0",
-    "@sanity/desk-tool": "^1.149.1",
+    "@sanity/desk-tool": "^1.149.2",
     "date-fns": "^1.30.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
