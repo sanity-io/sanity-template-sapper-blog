@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "sanity-sapper-blog-studio",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "main": "package.json",
   "author": "Sanity <hello@sanity.io>",
   "scripts": {
@@ -17,7 +17,7 @@
     "@sanity/cli": "^1.149.9",
     "@sanity/components": "^1.149.10",
     "@sanity/code-input": "^1.149.7",
-    "@sanity/core": "^1.149.11",
+    "@sanity/core": "^1.149.12",
     "@sanity/dashboard": "^1.149.10",
     "@sanity/default-layout": "^1.149.10",
     "@sanity/default-login": "^1.149.11",
