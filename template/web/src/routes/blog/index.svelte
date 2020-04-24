@@ -1,10 +1,13 @@
 <script context="module">
-  import client from '../../sanityClient'
-	export function preload({ params, query }) {
-    return client.fetch('*[_type == "post" && defined(slug.current) && publishedAt < now()]|order(publishedAt desc)').then(posts => {
-			return { posts };
-		}).catch(err => this.error(500, err));
-	}
+  export async function preload({ params }) {
+    try {
+      const res = await this.fetch('api/blog');
+      const { posts } = await res.json()
+      return { posts };
+    } catch (err) {
+      this.error(500, err);
+    }
+  };
 </script>
 
 <script>
