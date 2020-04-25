@@ -1,7 +1,7 @@
 <script context="module">
   export async function preload({ params }) {
     try {
-      const res = await this.fetch('api/blog');
+      const res = await this.fetch('api/blog/all');
       const { posts } = await res.json()
       return { posts };
     } catch (err) {

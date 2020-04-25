@@ -2,6 +2,7 @@ import client from '../../../sanityClient'
 
 export async function get (req, res) {
   try {
+    // We have access to req.params.slug because the filename has [slug] in it.
     const { slug } = req.params;
     const filter = '*[_type == "post" && slug.current == $slug][0]';
     const projection = `{

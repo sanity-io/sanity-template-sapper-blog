@@ -1,6 +1,7 @@
 <script context="module">
   export async function preload({ params }) {
     try {
+      // As with the server route, we have acces to params.slug here
       const res = await this.fetch(`api/blog/${params.slug}`);
       const { post } = await res.json();
       return { post };
