@@ -2,7 +2,7 @@
   "private": true,
   "name": "sanity-sapper-blog-web",
   "description": "Sapper frontend",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper export",
@@ -13,7 +13,7 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
-    "@sanity/client": "^1.150.0",
+    "@sanity/client": "^1.150.1",
     "@sanity/image-url": "^0.140.19",
     "compression": "^1.7.4",
     "groq": "^0.147.0",
