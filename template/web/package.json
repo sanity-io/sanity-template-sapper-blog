@@ -13,7 +13,7 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
-    "@sanity/client": "^2.0.0",
+    "@sanity/client": "^2.1.0",
     "@sanity/image-url": "^0.140.19",
     "compression": "^1.7.4",
     "groq": "^0.147.0",
