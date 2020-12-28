@@ -1,35 +1,20 @@
 <script context="module">
-  import client from "../../sanityClient";
-  import BlockContent from "@movingbrands/svelte-portable-text";
-  import serializers from "../../components/serializers";
   export async function preload({ params }) {
-    // the `slug` parameter is available because
-    // this file is called [slug].html
-    const { slug } = params;
-    const filter = '*[_type == "post" && slug.current == $slug][0]';
-    const projection = `{
-      ...,
-      body[]{
-        ...,
-        children[]{
-          ...,
-          _type == 'authorReference' => {
-            _type,
-            author->
-          }
-        }
-      }
-    }`;
-
-    const query = filter + projection;
-    const post = await client
-      .fetch(query, { slug })
-      .catch(err => this.error(500, err));
-    return { post };
-  }
+    try {
+      // As with the server route, we have acces to params.slug here
+      const res = await this.fetch(`api/blog/${params.slug}`);
+      const { post } = await res.json();
+      return { post };
+    } catch (err) {
+      this.error(500, err);
+    }
+  };
 </script>
 
 <script>
+  import BlockContent from "@movingbrands/svelte-portable-text";
+  import serializers from "../../components/serializers";
+
   export let post;
 </script>
 
