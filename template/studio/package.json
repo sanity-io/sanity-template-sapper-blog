@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "sanity-sapper-blog-studio",
-  "version": "1.0.49",
+  "version": "1.0.50",
   "main": "package.json",
   "author": "Sanity <hello@sanity.io>",
   "scripts": {
@@ -28,7 +28,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^3.11.0",
-    "sanity-plugin-dashboard-widget-document-list": "^0.0.11",
+    "sanity-plugin-dashboard-widget-document-list": "^0.0.13",
     "sanity-plugin-dashboard-widget-netlify": "^1.0.1"
   },
   "devDependencies": {
